@@ -20,7 +20,7 @@ type RegistryProps = {}
 
 const Registry: React.FC<RegistryProps> = ({}) => {
     return (
-        <div className="relative mt-8 bg-gray-900 lg:mt-20 mb-8">
+        <div className="relative bg-gray-900">
             <GenericHeader
                 title="Welcome to the Registry"
                 subTitle="View nodes or sign in to create and publish your own"
@@ -64,9 +64,7 @@ const Registry: React.FC<RegistryProps> = ({}) => {
 
                     {/* Display search results */}
                     <div className="wrapper mt-2 w-full">
-                        <div>
-                            <Hits hitComponent={Hit} />
-                        </div>
+                        <Hits hitComponent={Hit} />
                     </div>
 
                     <CustomSearchPagination />
